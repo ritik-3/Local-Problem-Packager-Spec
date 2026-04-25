@@ -1,0 +1,19 @@
+{
+  "name": "local-problem-packager-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo for Local Problem Packager (MCQ-first MVP)",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter desktop dev",
+    "build": "pnpm --filter desktop build",
+    "lint": "pnpm --filter desktop lint",
+    "typecheck": "pnpm --filter desktop typecheck"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

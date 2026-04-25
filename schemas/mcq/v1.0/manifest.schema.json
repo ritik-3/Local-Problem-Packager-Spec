@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-problem-packager/schemas/mcq/v1.0/manifest.schema.json",
+  "title": "MCQ Manifest v1.0",
+  "type": "object",
+  "required": ["schema_version", "problem_type", "slug", "title", "difficulty"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "problem_type": { "type": "string", "const": "mcq" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "difficulty": { "type": "string", "enum": ["Easy", "Medium", "Hard"] },
+    "question_file": { "type": "string" },
+    "explanation_file": { "type": "string" }
+  }
+}

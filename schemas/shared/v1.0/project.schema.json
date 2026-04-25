@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local-problem-packager/schemas/shared/v1.0/project.schema.json",
+  "title": "Project File v1.0",
+  "type": "object",
+  "required": ["schema_version", "project_id", "problems"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0" },
+    "project_id": { "type": "string", "minLength": 1 },
+    "problems": { "type": "array" }
+  }
+}

@@ -1,0 +1,16 @@
+[package]
+name = "desktop-tauri"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+tauri = { version = "2", features = [] }
+core-schema = { path = "../../../crates/core-schema" }
+validator = { path = "../../../crates/validator" }
+packager = { path = "../../../crates/packager" }

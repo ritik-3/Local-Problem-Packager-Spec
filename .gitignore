@@ -1,0 +1,24 @@
+# Node
+node_modules/
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Rust
+target/
+
+# Logs
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Build outputs
+dist/
+build/

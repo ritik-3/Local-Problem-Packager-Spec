@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  placeholder:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder
+        run: echo "CI scaffold created. Real jobs to be added in setup phase."

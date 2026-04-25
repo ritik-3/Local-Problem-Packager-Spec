@@ -1,0 +1,18 @@
+[project]
+name = "ingestion-sidecar"
+version = "0.1.0"
+description = "Ingestion and LLM orchestration sidecar for Local Problem Packager"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0",
+  "ruff>=0.6.9",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
