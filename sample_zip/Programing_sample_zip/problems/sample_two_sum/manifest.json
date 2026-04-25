@@ -1,0 +1,27 @@
+{
+  "slug": "sample-two-sum",
+  "code": "P-TWO-SUM",
+  "title": "Two Sum (Sample)",
+  "difficulty": "Easy",
+  "description_file": "description.md",
+  "image_file": "assets/problem.svg",
+  "category": "Programming",
+  "subtopic": "Imported",
+  "practice_order": 10,
+  "constraints": "2 <= len(nums) <= 1e5",
+  "function_name": "two_sum",
+  "function_params": ["nums", "target"],
+  "return_type": "List[int]",
+  "tags": ["array", "hashmap"],
+  "testcases": {
+    "python": "testcases/python.json",
+    "cpp": "testcases/cpp.json"
+  },
+  "default_stub": {
+    "python": "def two_sum(nums, target):\n    return []\n"
+  },
+  "wrappers": {
+    "python": "wrappers/python_wrapper.py",
+    "cpp": "wrappers/cpp_wrapper.cpp"
+  }
+}

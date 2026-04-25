@@ -1,0 +1,6 @@
+{
+  "test_cases": [
+    {"test_case_no": 1, "stdin": "4\n2 7 11 15\n9", "expected_output": "0 1", "is_visible": true},
+    {"test_case_no": 2, "stdin": "3\n3 2 4\n6", "expected_output": "1 2", "is_visible": false}
+  ]
+}
